@@ -35,6 +35,6 @@ public class TimeWarper : MonoBehaviour
         }
         currentWarp = warpFactors[selectedFactorIndex];
         Time.timeScale = currentWarp; 
-        Debug.Log(selectedFactorIndex);
+        //Debug.Log(selectedFactorIndex);
     }
 }
