@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SimpleKeplerOrbits;
 
 public class TimeWarper : MonoBehaviour
 {
-    KeplerOrbitMover cube;
     // Start is called before the first frame update
     private int[] warpFactors = new int[] { 1, 5, 10, 20, 50, 100 };
     public int currentWarp;
@@ -36,7 +34,7 @@ public class TimeWarper : MonoBehaviour
             
         }
         currentWarp = warpFactors[selectedFactorIndex];
-        Time.timeScale = currentWarp      
+        Time.timeScale = currentWarp; 
         Debug.Log(selectedFactorIndex);
     }
 }
